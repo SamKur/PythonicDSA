@@ -1,3 +1,6 @@
 ## DSA | Python | Bootcamp | Udemy |
-### 📎 [Susamay](https://www.linkedin.com/in/susamay-sk) 
+---
+### 📎 [Susamay's LinkedIn](https://www.linkedin.com/in/susamay-sk) 
 
+---
+🐍 Python v3.11.10
