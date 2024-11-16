@@ -1,3 +1,3 @@
-## Yet Another koushis to master DSA.  😅
-### 🖇️ [Susamay](https://www.linkedin.com/in/susamay-sk) 📎
+## DSA | Python | Bootcamp | Udemy |
+### 📎 [Susamay](https://www.linkedin.com/in/susamay-sk) 
 
