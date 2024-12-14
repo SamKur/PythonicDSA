@@ -12,25 +12,14 @@ def generate_diamond(n):
     Input: 3
     Output: ['  *  ', ' *** ', '*****', ' *** ', '  *  ']
     """
-    if n <= 0:
-        return []
+    li = []
+    for i in range(1,2*n):
+        i = i if i<=n else 2*n-i
+        spaces = abs(n-i)
+        stars = 2*i-1
+        st = ' '*spaces + '*'*stars + ' '*spaces
+        li.append(st)
+    return li
 
-    diamond = []
-
-    for i in range(1, 2 * n):
-        if i <= n:  # Upper & middle row
-            row_index = i
-        else:  # Lower
-            row_index = 2 * n - i
-
-        spaces = ' ' * (n - row_index)
-        stars = '*' * (2 * row_index - 1)
-        diamond.append(spaces + stars + spaces)
-
-    return diamond
-
-if __name__ == "__main__":
-    n = 3
-    result = generate_diamond(n)
-    for row in result:
-        print(row)
+n = 2
+print(generate_diamond(n))
