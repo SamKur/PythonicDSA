@@ -23,5 +23,5 @@ def generate_hollow_right_angled_triangle(n):
 
 
 if __name__=="__main__":
-    num = 2
+    num = 8
     print(*generate_hollow_right_angled_triangle(num), sep='\n')
