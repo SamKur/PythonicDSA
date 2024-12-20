@@ -10,10 +10,6 @@ def is_substring(s, t):
     bool: True if t is a substring of s, False otherwise.
     """
     # Your code here
-    for char in t:
-        if char not in s:
-            return False
-    return True
-
-
-print(is_substring("abcde", "ace"))
+    pass
+    
+print(is_substring("zabcde", "abe"))
