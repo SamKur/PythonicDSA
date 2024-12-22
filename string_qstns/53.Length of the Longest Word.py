@@ -13,8 +13,15 @@ def longest_word_length(s):
     Output: 5
     """
     # Your code here
-    pass
-
+    max_count = 0
+    count = 0
+    for char in s:
+        if char != ' ':
+            count = count + 1
+            if count>max_count:
+                max_count = count
+        else: count = 0
+    return max_count
 
 
 print(longest_word_length("The quick brown fox jumps over the lazy dog"))
