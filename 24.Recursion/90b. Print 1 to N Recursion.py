@@ -1,3 +1,5 @@
+# Direct print, not list output
+
 def printer(n):
     # iterative 
     if n <=0: return
