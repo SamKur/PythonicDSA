@@ -11,7 +11,8 @@ def count_digits(n):
     # Your code here
     # Not trying pythonic way len(n) or [:-1] OFC LOL!
     
-    if n==0: return 0
+    if n==0: return 1 # edge case
+    if n<10: return 1 # base case
     return 1+count_digits(n//10) # (+) after the recursive call, it's not a tail call, and thus Python's call stack will grow.
     # By default python does not optimize TAIL CALL RECURSION
     
@@ -25,4 +26,5 @@ def count_digits(n):
     # return count
 
 
+print(count_digits(0))      # Output: 1
 print(count_digits(12321))  # Output: 5
