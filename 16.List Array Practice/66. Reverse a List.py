@@ -4,6 +4,7 @@ def reverse_list(lst):
     :param lst: List[int] -> List of integers
     :return: List[int] -> The list with elements in reversed order
     """
+    # using two pointer method
     left = 0
     right = len(lst)-1
 
