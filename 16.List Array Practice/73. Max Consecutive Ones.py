@@ -16,7 +16,6 @@ def find_max_consecutive_ones(nums):
     #         counts[-1] += 1
     #     else:
     #         counts.append(0) # time O(n) & space O(n)
-    #         continue
     # return max(counts)
 
     # more optimized - time O(n) & space O(1)
