@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 def save_file(filepath, content):
