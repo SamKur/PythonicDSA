@@ -17,3 +17,5 @@ def is_perfect_square(num):
             return True  # Found a perfect square
         i += 1
     return False
+
+print(  is_perfect_square(37)   )

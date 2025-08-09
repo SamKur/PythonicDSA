@@ -44,15 +44,15 @@ def is_prime(n):
         return False  # Eliminate multiples of 2 and 3
     
     # Check divisors of the form 6k ± 1 (all primes are here - 5 , 7, 11, 17)
-    for i in range(5, int(n**0.5) + 1, 6):
+    # for i in range(5, int(n**0.5) + 1, 6):
+    #     if n % i == 0 or n % (i + 2) == 0:
+    #         return False
+    # or use while instead of for and int,sqrt function
+    i = 5
+    while i * i <= n:
         if n % i == 0 or n % (i + 2) == 0:
             return False
-    # or use while instead of for and int function
-    # i = 5
-    # while i * i <= num:
-    #     if num % i == 0 or num % (i + 2) == 0:
-    #         return False
-    #     i += 6
+        i += 6
     return True
 
 print(is_prime(125))
