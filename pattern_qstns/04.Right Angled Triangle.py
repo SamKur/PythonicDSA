@@ -9,6 +9,6 @@ def generate_triangle(n):
     list: A list of strings where each string represents a row of the triangle.
     """
     # Your code here
-    return ['*'*i for i in range(1,n+1)]
+    return ['*'*i+' '*(n-i) for i in range(1,n+1)]
 
 print(generate_triangle(4))

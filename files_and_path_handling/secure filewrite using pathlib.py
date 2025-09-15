@@ -5,8 +5,8 @@ def save_file(filepath, content):
     path = Path(filepath)
 
     # Check if the parent directory exists and create it if it doesn't
-    if not path.parent.exists():
-        path.parent.mkdir( parents=True)
+    # if not path.parent.exists(): path.parent.mkdir( parents=True) # OR
+    path.parent.mkdir(parents=True, exist_ok=True)
 
     # Save the content to the file
     with open(path, 'w') as file:
